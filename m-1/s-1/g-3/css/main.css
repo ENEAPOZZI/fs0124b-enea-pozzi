@@ -1,0 +1,255 @@
+
+
+/******************** GENERALI-FONT ********************/ 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400;1,700&family=Roboto+Condensed&display=swap');
+
+ 
+:root{
+    
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    --font-size-s: 1.2rem;
+    --font-size-m: 1.8rem;
+    --font-size-l: 2.5rem; 
+}
+
+/******************** GENEREL-BODY ********************/
+
+    body{
+    
+    padding: 0;
+    margin:0;
+
+    color: var(--color-primary-text);
+
+    font-family:'Montserrat', sans-serif;
+    font-size: var(--font-size-m);
+
+
+    }
+
+
+    #container{
+
+        max-width: 900px;
+        margin:0 auto;
+    }
+
+/******************** HEADER ********************/ 
+
+    #main-header{
+        
+        width: 100%;
+    
+    }
+
+/******************** HEADER-IMG ********************/ 
+    #img-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img-header img {
+        
+        width: 20%;
+       
+        animation-name: animazione-1;
+        animation-duration: 3s;
+        animation-fill-mode:forwards ;
+       
+
+        
+
+    }
+
+
+    @keyframes animazione-1 {
+
+        30%{
+            
+            transform:translate(100px);
+        }
+
+        50%{
+            transform:translate(100px);
+        }
+
+        75%{
+            transform:translate(100px);
+           
+        }
+        
+    }
+
+
+    #img-header img:hover {
+        
+        width: 20%;
+    }
+
+
+
+
+
+
+    #sot-tit{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color:rgba(16, 82, 181, 0.596);
+        font-size: calc(var(--font-size-s) - 0.3rem);
+
+        background: linear-gradient(to bottom, #d5692ef4, #ffffff);
+        border-top: 2px solid rgb(28, 215, 28);
+        margin-top: 0.5rem;
+    }
+
+/******************** MAIN ********************/ 
+    #main{
+      margin: 0 auto ;
+    }
+
+
+    #tit{
+        font-size: var(--font-size-l);
+        text-align: center;
+    }
+
+    
+
+    #tit-p{
+
+        font-size: var(--font-size-m);
+        text-align: center;
+
+    }
+
+/******************** MAIN-IMG ********************/ 
+
+
+
+    .cont-multimedia{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 2rem;
+
+        
+    }
+
+    .cont-multimedia img {
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        box-shadow:8px 8px 50px grey ; 
+        transition: all 2s;
+    }
+
+
+
+    .cont-multimedia img:hover{
+
+        transform: scale(1.1);
+    }
+
+/******************** MAIN-IMG-DESCRIZIONE ********************/ 
+
+    #descrizione-img {
+        text-align: center;
+        font-size: var(--font-size-s);
+        color:rgba(88, 93, 81, 0.411);
+        margin-top: 3rem;
+    }
+
+/******************** MAIN-IMG-LINK ********************/ 
+
+
+    #link-img{
+        border-left: 2px solid rgb(225, 153, 29);
+        line-height: 0.3rem;
+
+
+    }
+
+    #link-img .items-link-img {
+        margin-left: 1rem;
+    }
+
+
+  
+    #link-img h3 {
+        color: rgba(218, 110, 16);
+        
+    }
+
+    #link-img p {
+        color: rgba(218, 110, 16);
+        margin: 0;
+        font-size: calc(var(--font-size-s) + 0.3rem);
+    }
+
+ /******************** INGREDIENTI ********************/
+    
+    #ingredienti{
+     margin-top: 4rem;
+    }
+
+
+    div[id^=mid]{
+    padding: 1rem;
+    border-bottom: 2px solid rgba(11, 99, 232, 0.377);
+    }
+
+/******************** INGREDIENTI-ITEMS ********************/
+
+    .items-ingre{
+
+        margin-top: 3rem;
+
+    }
+
+
+    h4[class^=h4]{
+
+        font-weight: bold;
+
+    }
+
+    .items-ingre ul {
+
+        line-height: 3rem;
+        font-size: var(--font-size-m);
+    
+    }
+
+/******************** METHOD ********************/
+
+    .items-make > li  {
+
+        list-style: none;
+        font-size: var(--font-size-m);
+    }
+    
+/******************** VIDEO ********************/
+    video{
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        box-shadow:8px 8px 50px grey ;
+    }
+
+/******************** FOOTER ********************/
+
+    #footer > p{
+
+        display: inline-block ;
+        padding: 1rem;
+    }
