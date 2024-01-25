@@ -1,0 +1,299 @@
+/******************** GENERAL *********************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&family=Poppins:wght@400;500&family=Roboto+Condensed&display=swap');
+
+:root{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+body{
+
+    background-image: url("../img/sfondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+
+#container{
+    padding: 2rem;
+}
+
+/******************** HEADER *********************/
+
+
+
+header{
+    background-color:rgb(4, 99, 128);
+
+    
+}
+
+.header-container{
+   text-align: center;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+/******************** HEADER-IMG *********************/
+
+.header-img img{
+    width: 60%;
+}
+
+/******************** HEADER-TIT *********************/
+
+.header-tit{
+    margin-top:3rem;
+    
+
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+/******************** HEADER-NAV *********************/
+
+
+.header-nav{
+    margin-top:3rem;
+    line-height: 2rem;
+}
+
+
+.nav-item a {
+  
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+
+}
+
+
+
+/******************** MAIN/MAIN-CONTAINER *********************/
+
+#main{
+
+    margin-top: 3.5rem;
+    
+    
+}
+
+
+#main-container{
+    padding: 2rem;
+}
+
+
+
+/******************** MAIN-TIT *********************/
+
+#main-section{
+    padding: 2.5rem 1.5rem;
+    
+    background-color: #fff;
+}
+
+.tit-sez {
+    line-height: 2.5rem;
+    
+}
+
+.tit-sez h3{
+    font-size: 2.2rem ;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+
+/******************** MAIN-AUTORI *********************/
+
+.autori{
+    margin: 2.5rem 0 ;
+    color:rgba(128, 128, 128, 0.496);
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    
+}
+
+.autori> .au-icons{
+    display: inline-block;
+    margin: 0 0.3rem;
+}
+
+
+/******************** MAIN-AUTORI *********************/
+
+.content-1{
+    font-size: 1.6rem;
+
+}
+
+/******************** MAIN-CONTENT-1 *********************/
+.pre-content a {
+    color:rgb(113, 17, 203);
+    text-decoration: none;
+}
+
+.content--1{
+    margin:2.5rem 0 ;
+}
+.cont-incons{
+    display: inline-block;
+}
+
+.content-1-a{
+    padding: 0 2rem;
+}
+
+
+.content-1-a ul{ 
+    line-height: 2rem;
+}
+
+
+.content-1-a > ul>li{
+    list-style:disc ;
+}
+
+
+code{
+    border-radius:10px ;
+    background-color:rgba(220, 220, 220, 0.874);
+    border:1px solid grey;
+    padding: 0 0.5rem;
+}
+/******************** MAIN-CONTENT-2 *********************/
+
+.content-2{
+    margin:2.5rem 0 ;
+    font-size: 1.6rem;
+
+}
+
+.content{
+    margin:2.5rem 0 ;
+    padding: 0 2rem;
+}
+
+
+.content{
+    padding: 0 2rem;
+}
+
+.content > ol{
+    line-height: 2rem;
+}
+
+
+.content > ol>li{
+    list-style:decimal ;
+}
+
+.p-content{
+    margin:2.5rem 0 ;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+
+}
+
+/******************** MAIN-CONTENT-3 *********************/
+.content-3{
+    margin:2.5rem 0 ;
+    font-size: 1.6rem;
+}
+
+table>caption{
+    font-style: italic;
+    font-weight: bold;
+}
+
+table{
+    align-items: center;
+    width: 100%;
+}
+
+
+table >thead>tr> th {
+    background-color:rgba(45, 118, 214, 0.923);
+    color:#fff;
+    height: 5rem;
+    text-align:center;
+    border: 1px solid #ffffffa8;
+    padding: 1rem 0 ;
+    line-height: 2rem;
+    
+}
+
+table >tbody>tr>td {
+    
+    height: 2rem;
+    text-align:center;
+    border: 1px solid #ffffffa8;
+    padding: 2rem 0 ;
+    
+    
+}
+
+
+table >tbody>tr:nth-child(even) {
+    
+    background-color: rgba(228, 222, 222, 0.699);
+    
+    
+}
+
+table >tbody>tr:last-child {
+    
+    border-bottom: 2px solid rgb(126, 126, 227);
+
+}
+
+
+/******************** MAIN-CONTENT-4 *********************/
+
+.pre-content{
+    font-size: 1.6rem;
+}
+
+.pre-content a {
+    color: rgba(36, 207, 237, 0.955);
+    text-decoration: underline ;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+/******************** ASADE *********************/
+
+
+
+aside{
+    padding: 0  1.5rem;
+    
+    background-color: #fff;
+}
+
+
+#novita{
+    background-color: rgba(180, 172, 172, 0.885);
+    height: 200px;
+}
+
+.tit-art{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.tit-art>h3{
+    font-size: 3rem;
+}
