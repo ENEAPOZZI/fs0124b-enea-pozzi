@@ -1,0 +1,312 @@
+/*************** IMPORT-FONT ***************/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap');
+
+
+/*************** GENERAL ***************/ 
+
+:root{
+
+
+/****** FONT/VAR ******/ 
+
+    /**** Body ****/ 
+
+--body-font-color:#393d41 ;
+--body-font-size:1.2rem;
+--body-font-family:'Poppins', sans-serif;
+--body-interline:1.65em;
+
+   
+/**** Headings ****/ 
+--headings-font-color: #25a2c3  ;
+--headings-font-size:1.2rem;
+--headings-font-family:'Montserrat', sans-serif;
+--headings-interline:1.5em;
+   
+/**** Footer ****/ 
+--footer-color-text:#c8e7f0; 
+
+/**** Footer-heading ****/ 
+--footer-color-heading : white;
+
+/****** COLOR-BACK/VAR ******/
+
+/**** header ****/ 
+--header-bcolor:black; 
+
+/**** a/bottom+FM ****/ 
+--bottom-bcolor:#f04c2f;
+--bottom-font-family:'Montserrat', sans-serif;
+
+
+/**** testimonianze ****/ 
+--testim-bcolor:#e22d0e;
+
+/**** footer ****/ 
+--footer-bcolor:#25a2c3;
+
+/****** COLOR-BORDI/VAR ******/
+--schede-bordercolor:#dee1e3;
+
+}
+
+/*************** GENERAL/body ***************/ 
+
+body{
+
+    color: var(--body-font-color);
+    font-family: var(--body-font-family);
+    line-height: var(--body-interline);
+
+}
+
+/*************** header ***************/ 
+
+header {
+
+    background-color: var(--header-bcolor);
+    padding: 1.8rem 0 ;
+    text-align: center;
+    
+
+}
+
+header img {
+   
+    width: 150px;
+}
+
+/*************** caption  ***************/ 
+
+
+#caption-sez-corso{
+   
+   
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-size: var(--headings-font-size);
+    font-family: var(--headings-font-family);
+    line-height: var(--headings-interline);
+    
+    text-align: center;
+   
+
+    
+
+}
+
+#caption-sez-corso,#caption-sez-garantisce > div{
+     
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    
+ 
+}
+
+#caption-sez-corso >div> h1{
+    font-size: 2rem ;
+    color: var(--headings-font-color);
+    padding: 1.3rem 1rem;
+}
+
+
+
+#caption-sez-corso >div> p{
+    font-weight: none;
+}
+
+.link{
+    margin: 2rem 0;
+}
+
+
+#caption-sez-corso a{
+    
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--bottom-font-family);
+    background-color: var(--bottom-bcolor);
+    padding: 0.8rem;
+    border-radius: 10px;
+    
+}
+
+
+/*************** MAIN ***************/ 
+
+
+.container{
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+
+
+section[id^=sez]>article[class^=art]{
+
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+
+section[id^=sez]{
+
+    margin: 2rem 0 ;
+}
+
+article[class^=art]{
+
+    margin: 1.3rem 0 ;
+}
+
+h2[class*=tit]{
+    color: var(--headings-font-color);
+    font-size: var(--headings-font-family);
+    font-weight: bold;
+}
+
+p[class^=art]{
+
+    margin: 1.5rem 0 ;
+}
+
+
+/*************** MAIN/IMG ***************/ 
+
+
+#sez-img{
+    padding: 0 1.5rem;
+
+}
+
+
+#sez-img img{
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+
+
+
+/*************** CAPTION ***************/ 
+
+#caption-sez-garantisce{
+
+    background-color: var(--testim-bcolor);
+    text-align: center;
+    color: #fff;
+}
+
+
+
+#caption-sez-garantisce{
+
+    background-color: var(--testim-bcolor);
+    text-align: center;
+}
+
+
+#caption-sez-garantisce> div> h2{
+
+    padding: 1.3rem 0.8rem;
+    font-size: 1.8rem ;
+
+}
+
+
+#caption-sez-garantisce> div> p{
+
+    font-style: italic;
+    padding: 1.3rem 0.5rem;
+
+}
+
+.autore{
+    margin-top: 0.8rem;
+}
+
+
+/*************** ASIDE ***************/ 
+
+
+.item{
+    border: 2px solid var(--schede-bordercolor);
+    margin-top: 2rem;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+
+}
+.item img{
+    max-width: 100%;
+   
+}
+
+
+.item-testo{
+    padding: 1rem 2rem ;
+}
+.item-testo> h3{
+    color:var(--headings-font-color);
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    
+    
+}
+
+
+
+/*************** footer ***************/ 
+
+
+footer{
+    background-color: var(--footer-bcolor);
+    
+    margin-top: 4rem;
+    
+    padding-top: 1.3rem ;
+    padding-right: 1.8rem ;
+    padding-left: 1.8rem ;
+    padding-bottom: 5rem ;
+    
+    text-align: center;
+    color: var(--footer-color-text);
+
+   
+}
+
+
+footer>h2{
+    font-size: 2.2rem ;
+    padding: 2rem 1rem;
+    font-weight: bold;
+    color: var(--footer-color-text);
+}
+
+footer>nav{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+footer a{
+    color: var(--footer-color-text);
+}
+
+footer>nav>div>.icons{
+    
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+
+
+hr{
+    width: 180px;
+    
+}
+
+
+footer>p{
+    padding-top: 2rem;
+}
