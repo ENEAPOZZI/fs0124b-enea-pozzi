@@ -66,8 +66,8 @@ body{
 header {
 
     background-color: var(--header-bcolor);
-    padding: 1.8rem 0 ;
-    text-align: center;
+    padding: 1.5rem 2rem ;
+    
     
 
 }
@@ -93,15 +93,14 @@ header img {
     line-height: var(--headings-interline);
     
     text-align: center;
-   
 
-    
+    padding: 4rem;
 
 }
 
-#caption-sez-corso,#caption-sez-garantisce > div{
+#caption-sez-corso > div{
      
-    padding: 2rem 2.5rem 2rem 2.5rem;
+    padding: 7rem;
     
  
 }
@@ -138,15 +137,18 @@ header img {
 /*************** MAIN ***************/ 
 
 
-.container{
-    padding: 0 2rem;
+.container-1{
+    padding: 3rem 3rem;
     margin-top: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 
 section[id^=sez]>article[class^=art]{
 
-    text-align: center;
+    
     padding: 0 1.5rem;
 }
 
@@ -178,6 +180,7 @@ p[class^=art]{
 
 #sez-img{
     padding: 0 1.5rem;
+    text-align: center;
 
 }
 
@@ -208,6 +211,16 @@ p[class^=art]{
 }
 
 
+#caption-sez-garantisce> div{
+
+
+
+    padding: 4rem 2rem;
+    font-size: 1.8rem ;
+
+}
+
+
 #caption-sez-garantisce> div> h2{
 
     padding: 1.3rem 0.8rem;
@@ -219,19 +232,32 @@ p[class^=art]{
 #caption-sez-garantisce> div> p{
 
     font-style: italic;
-    padding: 1.3rem 0.5rem;
+    padding: 1.3rem ;
 
 }
 
 .autore{
     margin-top: 0.8rem;
+    padding-bottom: 2rem;
 }
 
 
-/*************** ASIDE ***************/ 
+/*************** ASIDE ***************/
+
+.container-2{
+    
+    margin-top: 3rem;
+    padding:  4rem;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
 
 
 .item{
+    
     border: 2px solid var(--schede-bordercolor);
     margin-top: 2rem;
     border-radius: 0px 0px 10px 10px;
@@ -284,19 +310,24 @@ footer>h2{
     color: var(--footer-color-text);
 }
 
-footer>nav{
-    text-align: center;
+footer nav{
+    
     padding-bottom: 2rem;
+    
+    text-align: center;
+}
+
+footer>nav>li{
+    list-style-type: none;
+    
 }
 
 footer a{
     color: var(--footer-color-text);
 }
 
-footer>nav>div>.icons{
-    
-    display: inline-block;
-    margin-right: 0.5rem;
+.fas{
+    margin-right:0.5rem ;
 }
 
 
