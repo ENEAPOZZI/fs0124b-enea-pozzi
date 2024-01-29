@@ -117,9 +117,7 @@ let name2 = 'John';
 
 console.log(name1 == name2);
 
-name2 = name2.toLocaleLowerCase();
-
-console.log(name1 == name2);
+console.log(name1.toLocaleLowerCase() == name2.toLocaleLowerCase());
 
 
 
