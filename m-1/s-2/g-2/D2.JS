@@ -3,15 +3,19 @@
 */
 
 
+
+
 let num1 = 8;
 let num2 = 9;
 
 if( num1 > num2){
 
     console.log('il numero piu grande e il :' + num1);
-}else{
+}else if( num2 > num1) {
     console.log('il numero piu grande e il :' + num2);
 
+}else {
+    console.log('i numeri sono uguali')
 }
 
 
@@ -21,7 +25,7 @@ if( num1 > num2){
 
 let ES2 = 8;
 
-if(ES2 != 5 ){
+if(ES2 !== 5 ){
     console.log('il numero forsito e not equal');
 }else{
 
@@ -53,14 +57,10 @@ if( risultatoSE3 == 0  ){
 let ES4 = 8;
 let ES41 = 4;
 
-let ES4add = ES4 + ES41 ;
-let ES4sott= ES4 - ES41 ;
-let ES4sott2= ES41 - ES4 ;
 
-if( ES4 == 8 || ES41 == 8){
-    console.log('Almeno 1 dei due valori dati e 8  ');
-}else if ( ES4add == 8 || ES4sott == 8 || ES4sott2 == 8 ){
-    console.log('Almeno un operazione o divisione fa come risultato 8');
+
+if( ES4 === 8 || ES41 === 8 || (ES4 + ES41) === 8 || (ES4 - ES41) === 8 || (ES41 - ES4) === 8){
+    console.log('verificato ');
 }
 
 
@@ -76,9 +76,6 @@ if( ES4 == 8 || ES41 == 8){
 */
 
 let totalShoppingCart = 100 ;
-let costoSpedizione=  10 ; 
-
-
 
 
 if (totalShoppingCart > 50){
@@ -130,11 +127,11 @@ console.log(arrES7);
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-let ES8 = 'ciao';
-let ES81 = 1 ;
+let ES8 = 4;
 
-if(typeof ES8 === typeof ES81  ){
-    console.log('il valore è un numero ')
+
+if(typeof ES8 ===  'number'   ){
+    console.log('il valore è un nummero ')
 }else{
     console.log('il valore  non è un numero ')
 
@@ -146,9 +143,8 @@ if(typeof ES8 === typeof ES81  ){
 */
 
 let ES9 = 5 ;
-let ES9Operazione= ES9 % 2 ;
 
-if(ES9Operazione == 0 ){
+if(ES9 % 2 === 0  ){
     console.log('il numero è pari ')
 }else{
     console.log('il numero è dispari ')
