@@ -166,6 +166,8 @@ console.log(charactersNames);
   */
 
 
+
+
     switch(starWarsCharacters == true){
 
         case (starWarsCharacters.eye_color == 'blue') :
@@ -208,11 +210,6 @@ console.log(charactersNames);
 
     while ( ES6 < starWarsCharacters.length  ){
 
-        
-         
-
-
-
         crewMass += starWarsCharacters[ES6].mass
 
         ES6++
@@ -252,10 +249,7 @@ console.log(charactersNames);
     Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
   */
 
-
-
-
-
+    
     for(let i = 0 ; i < starWarsCharacters.length ; i++){
 
             if(starWarsCharacters[i].gender == "n/a" ){
@@ -298,7 +292,7 @@ console.log(starWarsCharacters.length)
 
   
   /* --EXTRA-- ESERCIZIO 10
-    Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
+    Crea una funzionalità che selezioni unjjjj elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
   */
   
 
