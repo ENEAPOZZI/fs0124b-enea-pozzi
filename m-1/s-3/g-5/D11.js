@@ -613,9 +613,9 @@ ciclotd();
 
 function sfondolink() {
   
-  const links = document.getElementsByTagName('a');
+  let links = document.getElementsByTagName('a');
 
-  const arrlinks = Array.from(links);
+  let arrlinks = Array.from(links);
 
   arrlinks.forEach(el => {
     el.style.backgroundColor = 'red';
