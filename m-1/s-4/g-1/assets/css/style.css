@@ -287,10 +287,15 @@ footer a {
 
     header > div > img {
         width: 300px;
-        height: 80px;
+        height: 60px;
         margin:0px;
     }
 
+
+    header > nav {
+       
+        margin:0px;
+    }
 
     .tabella > table{
         width: 80%;
@@ -318,11 +323,15 @@ footer a {
         padding: 0 2rem;
     }
 
-    aside > div {
-        display: inline-block;
-        width: 33%;
-        margin:0px;
-    }
+   .item{
+    display: flex;
+    padding: 0px;
+   }
+   .item > div {
+    width: 33.33%;
+    height: 100%;
+    margin: 0;
+   }
 
     footer{
         display: block;
