@@ -27,21 +27,19 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
-  position: fixed;
-  z-index: 1;
+
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  
   width: 100%;
-  top:0;
-  left: 0;
+ 
   
 }
 
-main{
-  margin-top: 300px
-}
 
 .imgLeft{
   float: left;
- 
 }
 
 
@@ -123,7 +121,7 @@ aside > div{
 @media screen and (min-width: 1200px) {
   header {
     text-align: left;
-    position: fixed;
+   
    
     
   }
@@ -143,9 +141,7 @@ aside > div{
     margin-bottom: 0;
   }
 
-  main{
-    margin-top: 130px
-  }
+  
 
   .imgunder{
     position: absolute;
