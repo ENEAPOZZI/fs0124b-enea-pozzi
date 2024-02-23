@@ -1,0 +1,477 @@
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1080px;
+
+    
+   
+}
+*{
+    box-sizing: border-box;
+}
+
+
+  /****************************** header ******************************/
+#header{
+    background-color:#ffc017 ;
+    border-bottom: 2px solid black;
+
+    display:flex;
+    justify-content: space-around ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+
+
+}
+
+
+#header img {
+   width: 180px;
+}
+
+
+#nav-header    {
+padding: 1rem;
+    
+    
+}
+
+
+#nav-header ul   {
+    list-style: none;
+    display: flex;
+    
+    
+}
+
+
+
+
+#nav-header ul li  {
+    list-style: none;  
+    padding: 0.7rem;
+    font-size: 0.8rem;
+}
+
+#nav-header ul li a {
+    text-decoration: none;
+    color:black
+}
+
+
+#nav-header ul  button  {
+  background-color: #191919;
+  border-radius: 50px;
+  padding:0 0.8rem ;
+    
+    
+}
+
+#nav-header ul  button a  {
+    color:#fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+   
+      
+      
+  }
+
+
+  /****************************** hero ******************************/
+
+  #hero{
+    width: 100%;
+    background-color:#ffc017 ;
+  }
+
+  #hero h1{
+    font-family: "Spectral", serif;
+    font-size: 6rem;
+  }
+
+
+  .paragrafo-hero{
+   margin-top:1.5rem;
+   max-width: 340px;
+   line-height: 1.2rem;
+  }
+
+  .paragrafo-hero p{
+    color:#1e212b;
+  }
+
+
+  #hero button {
+    margin-top:2rem;
+    background-color: #191919;
+    padding: 0.4rem 2rem;
+    border-radius: 50px;
+
+  }
+
+  #hero button  a {
+    color:#fff;
+    text-decoration: none;
+    
+  }
+
+  .hero-container{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  } 
+  
+  
+  
+  /****************************** treding ******************************/
+
+  #treding{
+
+    margin-top:2rem;
+    border-bottom: 2px solid #E3E4E4 ;
+  }
+
+
+  .title-treding{
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  .title-treding h3{
+    font-weight: bold;
+    margin-left:0.5rem ;
+    font-size: 0.8rem;
+
+  }
+
+
+  /****************************** treding-flex ******************************/
+  .items-treding-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+   
+
+  }
+/****************************** treding-flex-card ******************************/
+  .item-treding{
+
+    display: flex;
+    
+    flex: 1 0 calc(100% / 3 - 0.5rem);
+    
+    padding: 0.5rem;
+    position: relative;
+    
+  }
+
+  .item-treding .number{
+    width: 10%;
+    color:#f2f2f2;
+    font-weight: bold;
+    font-size: 1.8rem ;
+
+  
+  }
+
+  .item-treding:nth-child(3) .number{
+    width: 15%;
+
+  
+  }
+
+  .item-treding:nth-child(4) .number{
+    width: 11.7%;
+
+  
+  }
+
+  .item-treding:nth-child(5) .number{
+    width: 13.2%;
+
+  
+  }
+
+
+
+  .item-treding .number p{
+   position: absolute;
+   top:0;
+   left:0;
+    
+  
+  }
+
+
+  
+  .title-text {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  .title-text  img {
+   width: 20px;
+   height: 20px;
+   border-radius: 100%;
+  }
+
+
+  .title-text  p {
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+   }
+
+   .item-treding .main-card{
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top:0.8rem;
+    
+   }
+
+
+   .item-treding .bottom-card{
+
+    font-size: 0.8rem;
+    margin-top:0.8rem;
+    color: #b1b1b17e;
+   }
+
+
+   
+   .item-treding .bottom-container{
+    
+    display: flex;
+    align-items: baseline;
+   }
+
+
+   .item-treding .bottom-container img {
+   width: 15px;
+   height: 15px;
+   display: inline;
+   line-height: center;
+   }
+
+ /****************************** main ******************************/
+
+ #main{
+    display: flex;
+   margin-top: 4rem;
+   column-gap: 4rem;
+ }
+
+ #article{
+    flex-basis: 60%;
+
+ }
+
+ #aside{
+    flex-basis: 40%;
+    position: sticky;
+    top: 0;
+    
+    
+ }
+
+
+ /****************************** item-article ******************************/
+
+ .item-article{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    margin-bottom: 2rem;
+ }
+
+ .item-article:nth-last-child(){
+  width: 100%;
+  display: flex;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+
+ .text-article{
+    flex-basis: 60%;
+    padding: 0.5rem;
+ }
+
+ .img-article{
+    flex-basis: 40%;
+    padding: 0.5rem;
+    display: flex;
+    
+    justify-content: center;
+ }
+
+ .img-article img{
+    width: 100%;
+    
+ }
+/****************************** item-article/ title+ img******************************/
+ .title-img{
+    display: flex;
+    align-items: center;
+    
+ }
+
+ .title-img img{
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+ }
+
+ .title-img p{
+   font-weight: bold;
+   font-size: 0.8rem;
+   margin-left: 0.5rem;
+  }
+  
+/****************************** item-article/ h4******************************/
+
+
+  .item-article h4{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+ }
+
+/****************************** item-article/ paragraf******************************/
+ .paragraf-card-article{
+    font-size: 0.8rem;
+    color:#7E7B78;
+    margin-top: 0.6rem;
+ }
+
+
+/****************************** item-article/ bottom-artile******************************/
+
+ .bottom-article{
+    display: flex;
+    margin-top:0.6rem;
+ 
+ }
+
+
+ .bottom-article p {
+    font-size: 0.7rem;
+    
+    color:#7E7B78;
+    align-self: center;
+ }
+
+ .bottom-article img{
+    width: 14px;
+    height: 14px;
+    display: inline;
+    line-height: center;
+    align-self: baseline;
+ }
+
+
+ .article-span{
+    background-color: #F1F2F3;
+    padding: 0.3rem;
+    border-radius: 50px;
+ }
+
+
+ .text-article img{
+    width: 20px;
+    height: 20px;
+    
+ }
+
+.bottom-article-img{
+    text-align: right;
+}
+
+
+/****************************** ASIDE/title******************************/
+
+
+.aside-title{
+
+  font-weight: bold;
+
+    font-size: 0.8rem;
+
+}
+/****************************** ASIDE/cloud******************************/
+
+.cloud{
+  display: flex;
+  flex-wrap: wrap;
+  gap:0.5rem;
+  padding-top: 1.5rem ;
+  padding-bottom: 2rem;  
+  border-bottom: 2px solid rgb(201, 198, 198) ;
+  
+
+}
+
+
+.cloud-items,.second-cloud-items{
+  text-decoration: none;
+  
+}
+
+
+.cloud-items{
+ padding: 0.5rem 1rem;
+ color:#76716F ;
+ border: 1px solid rgb(178, 175, 175);
+flex: 1 0 calc(100 / 3 - 2rem - 0.5rem);
+border-radius: 5px;
+}
+/****************************** ASIDE/cloud2******************************/
+
+.second-cloud{
+ margin-top: 1.2rem;
+
+ 
+ }
+
+
+ .second-cloud-items{
+
+ 
+  
+  text-align: none;
+  color:#76716F ;
+  padding: 0.5rem 0.8rem; 
+  
+  
+ }
+
+ .second-cloud ul li {
+ list-style: none;
+  }
+
+
+
+  .second-cloud ul  {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+     }
+
+
+  .sticky{
+  
+    position: sticky;
+    top:10%;
+   
+  }
