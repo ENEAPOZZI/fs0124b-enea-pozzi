@@ -26,11 +26,13 @@ body{
     top: 0;
     left: 0;
     z-index: 100;
-
-
-
+    transition: background-color 2s;
 }
 
+
+#header:hover{
+  background-color: #fff;
+}
 
 #header img {
    width: 180px;
@@ -70,6 +72,7 @@ padding: 1rem;
   background-color: #191919;
   border-radius: 50px;
   padding:0 0.8rem ;
+  transition: background-color 2s;
     
     
 }
@@ -474,4 +477,40 @@ border-radius: 5px;
     position: sticky;
     top:10%;
    
+  }
+
+
+/****************************** toll-tip******************************/
+
+  .toll-tip{
+    position: absolute;
+    background-color: #191919;
+    padding: 1rem ;
+
+  }
+
+  .title-toll{
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  .title-toll img {
+    width: 20px;
+    height: 20px ;
+
+    border-radius:100%
+  }
+  
+
+  .title-toll p {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+
+  }
+
+
+  .main-toll{
+    font-size: ;
   }

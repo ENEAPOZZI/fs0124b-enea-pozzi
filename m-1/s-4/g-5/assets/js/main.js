@@ -1,3 +1,5 @@
+
+
 let header = document.getElementById('header')
 let bottone = document.getElementById('bottone')
 
@@ -18,5 +20,4 @@ window.addEventListener('scroll',function(){
         bottone.style.backgroundColor=''
     }
 })
-
 
