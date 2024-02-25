@@ -59,7 +59,7 @@ body{
   color:black
 }
 /****************************** header/nav/button ******************************/
-#nav-header ul  button  {
+#bottone  {
   background-color: #191919;
   border-radius: 50px;
   padding:0 0.8rem ;
@@ -67,7 +67,7 @@ body{
       
 }
 
-#nav-header ul button a  {
+#bottone a  {
   color:#fff;
   text-decoration: none;
   font-size: 0.8rem;
@@ -396,7 +396,7 @@ margin-bottom: 1rem;
 
 .img-article img{
   width: 100%; 
-  padding: 0.5rem;
+  
 }
 /****************************** item-article/ title+ img******************************/
  .title-img{
@@ -534,8 +534,6 @@ margin-bottom: 1rem;
   position: sticky;
   top:10%;
 }
-
-
 
 
 
