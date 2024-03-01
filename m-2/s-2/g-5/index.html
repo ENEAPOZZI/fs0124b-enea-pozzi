@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione-EneaPozzi-Netflix</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+    
+    <nav id="navbar" class="navbar navbar-expand-lg  ">
+
+        <div class="container-fluid px-5 ">
+            
+            <a class="navbar-brand" href="#">
+                <img src="./assets/netflix_logo.png" alt="Bootstrap" width="90" height="40">
+            </a>
+             
+          <button id="toggler-nav" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span  class="navbar-toggler-icon "></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV show</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mi list</a>
+              </li>
+    
+            </ul>
+
+
+            <div class=" d-flex justify-content-end">
+                <div class="d-flex">
+
+                    <i id="icon1" class="px-2 bi bi-search"></i>
+
+                 
+                    <a id="link1" class=" px-2 nav-link" href="#">Kids</a>
+                   
+    
+                    <i id="icon2" class=" px-2 bi bi-bell-fill"></i>
+    
+                    <div class=" px-2 flex-shrink-0 dropdown d-inline">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/avatar.png" alt="mdo" width="32" height="32" >
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                          <li><a class="dropdown-item" href="#">New project...</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div id="hero ">
+        <div class="cotainer-fluid px-5 mt-3">
+            <div class="d-flex justify-content-between">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <h3 class="h2 text-light"> TV Show</h3>
+                    
+                  
+                    <div class="btn-group ms-2" role="group">
+                      <button type="button" class="btn bg-black rounded-0 dropdown-toggle text-light border border-white " data-bs-toggle="dropdown" aria-expanded="false">
+                        Genres
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                      </ul>
+                    </div>
+    
+                </div>
+                
+                <div class="d-none d-md-block">
+                    <div class="d-flex">
+
+                        <div class="items-little">
+                            <i class="bi bi-list"></i>
+                        </div>
+    
+                        <div class="items-little">
+                            <i class="bi bi-grid"></i>
+                        </div>
+    
+                    </div>
+                </div> 
+            </div>
+
+            <div  id="main">
+                <div class="cotainer-fluid  mt-3">
+
+                    <div id="Treding Now">
+                        <h3 class="h5 text-light"> Treding Now </h3>
+                        <div class="row g-2">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media1.jpg">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media2.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid"  src="./assets/media/media3.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img  class="img-fluid" src="./assets/media/media4.jpg">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media5.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img  class="img-fluid" src="./assets/media/media6.jpg">
+                            </div>
+
+                        </div>
+                
+                    </div>
+
+                    <div id="Wacht It Again ">
+                        <h3 class="h5 text-light mt-5"> Wacht It Again </h3>
+                        <div class="row g-2">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media1.jpg">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media2.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid"  src="./assets/media/media3.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img  class="img-fluid" src="./assets/media/media4.jpg">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media5.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img  class="img-fluid" src="./assets/media/media6.jpg">
+                            </div>
+
+                        </div>
+                
+                    </div>
+
+                    <div id="New Releases ">
+                        <h3 class="h5 text-light mt-5"> New Releases </h3>
+                        <div class="row g-2">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media1.jpg">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media2.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid"  src="./assets/media/media3.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img  class="img-fluid" src="./assets/media/media4.jpg">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img class="img-fluid" src="./assets/media/media5.webp">
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <img  class="img-fluid" src="./assets/media/media6.jpg">
+                            </div>
+
+                        </div>
+                
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+         </div>        
+    </div>
+
+    <div id ="footer">
+
+        <div class="container mt-5">
+            <div class="d-flex">
+
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+
+
+      
+
+      
+    
+
+   
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

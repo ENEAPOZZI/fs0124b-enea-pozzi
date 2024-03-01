@@ -1,0 +1,35 @@
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px
+
+}
+
+
+
+
+
+.giallo,.verde,.blu{
+    flex: 1 0 calc(100%  s4 - 10px);
+    height: 200px;
+}
+
+
+.giallo{
+    background-color: yellow;
+    color: black;
+
+    
+}
+
+
+.verde{
+    background-color: green;
+    color: black;
+}
+
+
+.blu{
+    background-color: blue;
+    color: black;
+}
