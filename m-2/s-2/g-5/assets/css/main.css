@@ -1,27 +1,17 @@
+
+
+/****************************** GENERAL/index ******************************/
 body{
     background-color: #141414;
 }
 
-
+/************************** NAV/BAR-INDEX/SETTING **************************/
 #navbar{
     background-color: #141414; 
 }
 
-.nav-link  {
-    color: #fff;
-}
-
 #toggler-nav{
    border-color: #fff;
-}
-
-.side-elements i {
-    color: #fff;
-}
-
-.side-elements a {
-    color: #fff;
-    text-decoration: none;
 }
 
 .dropdown-toggle::after {
@@ -36,152 +26,122 @@ body{
     color: #fff;
 }
 
-
-#icon1,#icon2,#link1{
-    color: #fff;
-}
-#link1{
-    font-size: 0.9;
-}
-
 .items-little{
     border: 1px solid #878787;
-
-   
 }
+
 .items-little i {
-   font-size: 12px;
    color:#878787
-
 }
 
-
+/************************** FOOTER-INDEX **************************/
 .bi{
-    padding: 10px;
-    font-size: 20px;
     color: #808080;
 }
 
 #footer a {
     color: #808080;
-    text-decoration: none;
+   
 }
 
 #footer p {
     color: #808080;
 }
 
-
-#navbar2{
-    background: linear-gradient(#000000,#727272,);
-}
-
-
-.container2 h2 {
-   font-weight: 500;
-}
-
-hr{
-    width: 100%;
-    color: #fff;
-}
-
- #strive-student{
-    background-color:#666666;
- }
-
- #form{
-    max-width: 500px;
- }
-
- .container-general{
-    max-width: 1000px;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
- }
-
-.first-items-form button p{
-    font-weight: bold;
-}
-
-.first-items-form input {
-    width: 85%;
-}
+/************************** GENERAL-PROFILE **************************/
 
 .first-items-form input::placeholder {
     color: #fff; 
-  }
-.second-items-form button{
-   
+}
+
+.second-items-form button{   
     font-size: 12px;
 }
 
-.font-weight-bold {
-    font-weight: bold;
-  }
-
- .letter-spacing{
-    letter-spacing: 2px;
- } 
-
- 
-.font-cheked{
-    font-size: 13px;
-}
-
-
-.custom-btn {
-    width: 100%; 
-  }
-
-
-
-
-
+/****************************** GENERAL/SETTING ******************************/
   #body{
     background-color: #fff;
   }
 
-  .container-general-setting{
-    max-width: 1000px;
-    margin: 0 auto;
- }
+/************************************** CLASS-BY-ME **************************************/
+    
+    /**************** GENERAL ****************/
+    .font-weight-bold {
+        font-weight: bold;
+    }
 
-  #setting{
-    max-width: 1000px;
- }
+    .weight-400{
+        font-weight: 400;
+    }
+    
+    .margin-auto-0{
+        margin: 0 auto;
+    }
 
- .hr-black{
-    width: 100%;
-    color: #000000;
- }
 
+    .max-width-md{
+        max-width: 500px;
+    }
+     
+    .max-width-lg{
+        max-width: 1000px;
+    }
+    
+    /**************** INDEX ****************/
+    .nav-link{
+        color: #fff;
+        text-decoration: none;
+        padding: 8px;
+    }
 
- .weight-400{
-    font-weight: 400;
- }
+    /**************** PROFILE ****************/
+    .hr-w{
+        color: #fff;
+    }
 
- .border{
-    background-color:#dee2e677 ;
- }
+    .w-85{
+        width: 85%;
+    }
+    
+    .bg-form{
+        background-color:#666666;
+    }
+    
+    .font-cheked{
+        font-size: 13px;
+    }
+    
+    .custom-btn {
+        width: 100%; 
+    }
 
- .t-ciao{
-   font-size: 15px;  
- }
+    .letter-spacing{
+        letter-spacing: 2px;
+    } 
+    
+    /**************** SETTING ****************/
+    .t-ciao{
+        font-size: 15px;  
+    }
 
- .fs-7{
-    font-size: 15px;
-   
- }
+    .fs-7{
+        font-size: 15px; 
+    }
 
- .fs-8{
-    font-size: 12px;
- }
+    .fs-8{
+        font-size: 12px;
+    }
 
- .fs-9{
-    font-size: 10px;
- }
+    .fs-9{
+        font-size: 10px;
+    }
+
+    .hr-black{
+        
+        color: #000000;
+    }
+
+     
+    .border{
+        background-color:#dee2e677 ;
+    }
