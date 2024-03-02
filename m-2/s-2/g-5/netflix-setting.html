@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione-EneaPozzi-Netflix-setting</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body id="body">
+
+    
+    <nav id="navbar" class="navbar navbar-expand-lg  ">
+
+        <div class="container-fluid px-5 ">
+            
+            <a class="navbar-brand" href="#">
+                <img src="./assets/netflix_logo.png" alt="Bootstrap" width="90" height="40">
+            </a>
+             
+          <button id="toggler-nav" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span  class="navbar-toggler-icon "></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV show</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mi list</a>
+              </li>
+    
+            </ul>
+
+
+            <div class=" d-flex justify-content-end">
+                <div class="d-flex align-items-center">
+
+                    <i id="icon1" class="px-2 bi bi-search"></i>
+
+                 
+                    <a id="link1" class=" px-2 nav-link" href="#">Kids</a>
+                   
+    
+                    <i id="icon2" class=" px-2 bi bi-bell-fill"></i>
+    
+                    <div class=" px-2 flex-shrink-0 dropdown d-inline">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/avatar.png" alt="mdo" width="32" height="32" >
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                          <li><a class="dropdown-item" href="#">New project...</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    
+    
+    <div class="container-general-setting mt-4 px-5 p-md-0">
+        <div id="setting ">
+            <p class="fs-4 mb-2 text-start">Account</p>
+            <hr class="hr-black">
+
+            <div class="row">
+                <div class="col-4">
+                    <p class="fs-6 mb-2 text-secondary ">MEMBERSHIP &amp; BILLING </p>
+                    <button type="button" class="btn btn-secondary btn-lg rounded-0 fs-6 border text-dark ">Candel Membership</button>
+
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-auto me-auto">
+                            <p class="m-0 fs-6 fw-bolder" > <small> student@strive.school</small></p>
+                            <p class="m-0 fs-6 text-secondary"> <small>Passowrd:*****</small></p>
+                            <p class="m-0 fs-6 text-secondary"> <small>Phone: 321 044 1279 </small></p>
+                        </div>
+                        
+                        <div class="col-auto ">
+                            <a class="d-block text-end text-decoration-none" href="#">Chanche account email</a>
+                            <a class="d-block text-end text-decoration-none" href="#">Chanche password </a>
+                            <a class="d-block text-end text-decoration-none" href="#">Chanche phone number</a>
+                        </div>
+                    </div>
+                    <hr class="hr-black">
+                    <div class="row">
+                        <div class="col-auto me-auto">
+                            <div class="d-flex align-items-center">
+                                <i class=" fs-7 p-0  text-dark d-inline bi bi-paypal"></i> <p class="m-0 fs-8 fw-medium fw-bold" ><small> PayPall</small></p> <p class="m-2 fs-6 fw-medium" > <small> student@strive.school</small></p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-auto ">
+                            <a class="d-block text-end text-decoration-none" href="#">Update payment info</a>
+                            <a class="d-block text-end text-decoration-none" href="#">Biling details </a>
+                        </div>
+                    </div>
+                    <hr class="hr-black">
+                    <div class="row">
+                        <div class="col offset-7 ">
+                            <a class="d-block text-end text-decoration-none" href="#">Redeem gift card of promo code</a>
+                            <a class="d-block text-end text-decoration-none" href="#">Where t buy gifts cards </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-black  ">
+
+            <div class="row ">
+                <div class="col-4">
+                    <p class="fs-6 mb-2 text-secondary weight-400">PLAN DETAILS </p>
+                </div>
+    
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-auto me-auto">
+                            <div class="d-flex align-items-center">
+                                 <p class="m-0 ">Premium</p> <button type="button" class="btn ms-1 border-1 border border-dark fs-9 p-1 fw-bold btn-transparent btn-sm">ULTRA HD</button>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-auto ">
+                            <a class="d-block text-end text-decoration-none" href="#">Chanche plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-black  mt-0">
+
+            <div class="row">
+                <div class="col-4">
+                    <p class=" mb-2 text-secondary t-ciao weight-400">SETTINGS </p>
+                </div>
+    
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="d-block text-start text-decoration-none" href="#">Parental controls</a>
+                            <a class="d-block text-start text-decoration-none" href="#">Test participations</a>
+                            <a class="d-block text-start text-decoration-none" href="#">Mange dowload devides</a>
+                            <a class="d-block text-start text-decoration-none" href="#">Actvite e devide</a>
+                            <a class="d-block text-start text-decoration-none" href="#">Recent device straming actibity </a>
+                            <a class="d-block text-start text-decoration-none" href="#">Sign out of all devices</a>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <hr class="hr-black  mt-1">
+
+            <div class="row">
+                <div class="col-4">
+                    <p class=" mb-2 text-secondary t-ciao weight-400">MY PROFILE </p>
+                </div>
+    
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-auto me-auto">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/avatar.png" alt="Bootstrap" width="35" class="rounded-circle" height="35">
+                                <p class="m-2 fs-6 fw-medium" > <small> strive student</small></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-auto ">
+                            <a class="d-block text-end text-decoration-none" href="#">Manage profilies</a>
+                            <a class="d-block text-end text-decoration-none" href="#">Add profile email</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 ">
+                            <a class="d-block text-start text-decoration-none" href="#">Language</a>
+                            <a class="d-block text-start text-decoration-none" href="#">Playback settings </a>
+                            <a class="d-block text-start text-decoration-none" href="#">Subtitle appearance</a>
+                        </div>
+                        
+                        <div class=" col-4 offset-2">
+                            <a class="d-block text-start text-decoration-none" href="#">View activity</a>
+                            <a class="d-block text-start text-decoration-none" href="#">Ratings </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+
+
+        </div>
+        
+
+      
+
+
+    </div>  
+
+      
+    
+
+   
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
