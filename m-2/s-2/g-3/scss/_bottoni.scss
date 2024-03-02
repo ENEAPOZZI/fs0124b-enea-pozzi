@@ -1,0 +1,18 @@
+
+$btn-color: (
+    blu: #0e6cff,
+    arancio:#ff8700,
+    verde:#4caf50,
+);
+    
+
+
+
+@each $chiave, $valore in $btn-color {
+    .btn-#{$chiave}{
+        background-color: $valore;
+        
+        border-radius: 10px;
+       
+    }
+}

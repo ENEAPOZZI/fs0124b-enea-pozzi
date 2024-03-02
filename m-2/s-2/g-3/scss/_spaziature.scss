@@ -1,0 +1,35 @@
+$padding: 5,10,15,20,30;
+$margin: 5,10,15,20,25,30;
+$w:100,200,300;
+$h:100,200,300;
+
+@each $x in $padding{
+    .p-#{$x}{
+        padding: $x + px;
+    } 
+}
+
+
+@each $i in $margin{
+    .m-#{$i}{
+        margin: $i + px;
+    } 
+}
+
+@each $i in $w{
+    .w-#{$i}{
+        width: $i + px;
+    } 
+}
+
+
+@each $i in $h{
+    .h-#{$i}{
+        height: $i + px;
+    } 
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}

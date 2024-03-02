@@ -1,0 +1,46 @@
+@import 'reset.scss';
+@import 'spaziature.scss';
+@import 'font.scss';
+@import 'mixins.scss';
+@import 'bottoni.scss';
+@import 'animazioni.scss';
+@import 'colori.scss';
+
+
+
+.grid{
+    @include grid;
+}
+
+.grid .items {
+    @include flexbasis;
+
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.hero{
+    @include grid;
+}
+
+ .text-hero{
+    @include flexbasishero;
+}
+
+.hero-img{
+    @include flexbasishero;
+}
+
+
+
+
+#nav{
+    @include grid;
+    
+}
+
+.a-i-c{
+    align-items: center;
+}
