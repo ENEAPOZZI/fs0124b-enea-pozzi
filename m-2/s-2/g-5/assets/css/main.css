@@ -34,6 +34,25 @@ body{
    color:#878787
 }
 
+/************************** NAV/BAR-INDEX/HOVER **************************/
+.nav-link{
+    transition: color 0.5s;
+}
+
+.nav-link:hover{
+    color: red;
+}
+/************************** INDEX/EFFETTO-HOVER **************************/
+#main img{
+    transition: transform 0.5s;
+}
+
+#main img:hover{
+    transform: scale(1.2);
+}
+
+
+
 /************************** FOOTER-INDEX **************************/
 .bi{
     color: #808080;
@@ -47,6 +66,35 @@ body{
 #footer p {
     color: #808080;
 }
+
+/************************** INDEX-FOOTER/EFFETTO-HOVER **************************/
+#footer a{
+    transition: color 0.5s;
+}
+
+#footer a:hover{
+    color: red;
+}
+
+
+#footer i{
+    transition: color 0.5s;
+}
+
+#footer i:hover{
+    color: red;
+}
+
+#footer button{
+    transition: background-color 0.5s;
+}
+
+#footer button:hover{
+    background-color: red;
+}
+
+
+
 
 /************************** GENERAL-PROFILE **************************/
 
