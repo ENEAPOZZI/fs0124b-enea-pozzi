@@ -37,6 +37,7 @@ body{
 /************************** NAV/BAR-INDEX/HOVER **************************/
 .nav-link{
     transition: color 0.5s;
+    color: #fff;
 }
 
 .nav-link:hover{
