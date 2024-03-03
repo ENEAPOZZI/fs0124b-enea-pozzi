@@ -1,0 +1,23 @@
+.article{
+    display: flex;
+    padding: 10px;
+    background-color:#f3df85 ;
+}
+
+
+.img-article{
+    flex:1 0 50%;
+}
+
+.img-article img{ 
+    width: 100%;
+}
+
+
+.text-article{
+    flex: 1 0 50%;
+    color: #612406;
+    margin-left: 10px;
+}
+
+
