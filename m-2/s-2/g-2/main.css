@@ -1,0 +1,20 @@
+.text{
+    flex:1 0 60%;
+}
+
+.img-container{
+    flex:1 0 40%;
+}
+
+.macro-card{
+    width: 80%;
+    
+}
+
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
