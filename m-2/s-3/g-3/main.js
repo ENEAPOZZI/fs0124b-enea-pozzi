@@ -67,17 +67,17 @@ fetch('https://striveschool-api.herokuapp.com/books')
             deleteBtn.innerText= 'elimina'
             div.append(deleteBtn)
 
+            
+
+            
+
+            carello.append(div)
+
             deleteBtn.addEventListener('click', function(){
 
                 div.classList.add('d-none')
                 
             })
-
-           
-
-            carello.append(div)
-
-
 
 
         })
