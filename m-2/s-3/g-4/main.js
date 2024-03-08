@@ -29,12 +29,13 @@ btn.addEventListener('click', function(){
 
     chiamata('cat').then(items => {
 
-        items.photos.forEach(el, index => {
+        items.photos.forEach(el, index  => {
             console.log(el.url)
 
             let img = document.querySelectorAll('.card-img-top')
+        
+            img[index].src= el.url.medium
 
-            img[index].src=el.src.medium
         
         });
     
