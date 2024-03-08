@@ -1,86 +1,104 @@
 
  
-fetch(`https://striveschool-api.herokuapp.com/api/product/`,{
+
+
+ 
+ /*************** RICHIESTA-ELEMENTI ***************/
+
+ 
+ 
+    fetch(`https://striveschool-api.herokuapp.com/api/product/`,{
+
     method:'GET',
     headers:{
         "Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZTEzODJkN2IxMTAwMTkwZTZlNjYiLCJpYXQiOjE3MDk4OTE4OTYsImV4cCI6MTcxMTEwMTQ5Nn0.JD49Aft3WcfWhnvaF0ZZkMyHVYVllezL-qw698SnpII",
     },
-    
+
+  
+
 })
 .then(res => res.json())
 .then(telefoni => {
 
+    /*************** SCOMPARSA-DEL-LOADER ***************/
+    
+   // setTimeout(() => { questo è il set timeout per vedere meglio il loader c'è anche la parte sotto 
+    document.getElementById('loader').style.display = 'none';
 
     for(let telefono of telefoni){
 
+        /*************** RICHIAMO-FUNZIONE-CLONE-TEMPLATE ***************/
+
         let card = generaClone()
     
+        /*************** ITERAZIONE-ELEMENTI-CARD ***************/   
 
-
-        let id = card.querySelector('.id')
         let nome = card.querySelector('#nome')
         let modello = card.querySelector('#modello')
         let descrizione = card.querySelector('#descrizione')
         let prezzo = card.querySelector('#prezzo')
         let img = card.querySelector('#img')
         
-
+        /*************** ITERAZIONE-BOTTONI-CARD ***************/ 
 
         let modificaBtn = card.querySelector('#modifica')
         let scopriBtn = card.querySelector('#scopri')
         let eliminaBtn = card.querySelector('#elimina')
         
-
+        /*************** ASSEGNAZIONE-VALORI-ELEMENTI-CARD ***************/     
         
-        console.log(telefono._id) 
         img.src = telefono.imageUrl
         nome.innerText = telefono.name
         modello.innerText = telefono.brand
-        prezzo.innerText = telefono.price
+        prezzo.innerText = telefono.price + '$'
         descrizione.innerText = telefono.description
 
-        modificaBtn.href = `edit.html?id=${telefono.id}`
-        scopriBtn.href = `dettagli.html?id=${telefono.id}`
+        /*************** ASSEGNAZIONE-VALORI-SPECIAL/BOTTINI-ELEMENTI-CARD ***************/     
 
-        scopriBtn.addEventListener('click',function(){
+        modificaBtn.href = `edit.html?id=${telefono._id}`
 
-            location.href = '../dettagli.html'
-            
-        })
+        scopriBtn.href = `dettagli.html?id=${telefono._id}`
+
         
+        /*************** ELEMENTI-CARD/BOTTONE-ELIMINA + CHIAMATA/CONFERMA ***************/   
+
         eliminaBtn.addEventListener('click',function(){
 
-            fetch(`https://striveschool-api.herokuapp.com/api/product/${telefono._id}`,{
-                method:'DELETE',
-                headers:{
-                    'Content-type':'application/json',
-                    'Authorization':"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZTEzODJkN2IxMTAwMTkwZTZlNjYiLCJpYXQiOjE3MDk4OTE4OTYsImV4cCI6MTcxMTEwMTQ5Nn0.JD49Aft3WcfWhnvaF0ZZkMyHVYVllezL-qw698SnpII",
-                }
-            })
-            .then(res => res.json())
-            .then(telfonodel => {
-                
-                eliminaBtn.closest('.card').remove()
-            })
-            
+            let conferma = confirm("Sei sicuro di voler eliminare,l'elemente?");
+            if(conferma){
+                fetch(`https://striveschool-api.herokuapp.com/api/product/${telefono._id}`,{
+                    method:'DELETE',
+                    headers:{
+                        'Content-type':'application/json',
+                        'Authorization':"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZTEzODJkN2IxMTAwMTkwZTZlNjYiLCJpYXQiOjE3MDk4OTE4OTYsImV4cCI6MTcxMTEwMTQ5Nn0.JD49Aft3WcfWhnvaF0ZZkMyHVYVllezL-qw698SnpII",
+                    }
+                })
+                .then(res => res.json())
+                .then(telfonodel => {
+                    
+                    eliminaBtn.closest('.card').remove()
+                })
+            }
+    
         })
 
-   
+        /*********** INSERIMENTO-IN-PAG-DELLA-CARD ************/   
+
         document.querySelector('#prodotti').append(card)
 
     }
-   
-  
 
+   // }, 3000) questo è il set timeout per vedere il loader
+    
+    
 })
+    /*************** FUNZIONE-CLONE-TEMPLATE ***************/
+
+ 
+ 
 
 
-
-
-
-
-
-function generaClone(){
+ function generaClone(){
     
     let template = document.querySelector('#template')
     let clone = template.content.cloneNode(true)

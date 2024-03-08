@@ -9,22 +9,20 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <div class="container">
+        <div class="container-fluid d-flex justify-content-between">
+            
                 <a class="navbar-brand" href="index.html">
                   <img src="./assets/img/logo.png" alt="Bootstrap" width="90" height="60">
                 </a>
+             
+          
+              <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a id='add' class="nav-link active btn btn-success w-100 text-light " type="button" href="add.html" aria-current="page">add</a>
+                  </li>
+                </ul>
               </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a id='add' class="nav-link active btn btn-success " type="button" href="add.html" aria-current="page">add</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
 
@@ -36,7 +34,7 @@
         <h2 class="fs-1 fw-semibold ">Add Products</h2>
         <hr class="mt-1"></hr>
        
-        <form>
+        <form id="form">
             <div class="mb-3">
               <label for="nome" class="form-label">Nome</label>
               <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Nome Prodotto">
@@ -64,7 +62,7 @@
             </div>
 
             <div class="mb-3  text-end">
-                <button type="reset" id="reset" class="btn btn-outline-secondary w-25">Reset</button>
+                <button  type="button" id="reset" class="btn btn-outline-secondary w-25">Reset</button>
                 <button type="button" id="save" class="btn btn-warning  w-25">Save</button> 
             </div>
 

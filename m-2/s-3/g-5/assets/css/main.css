@@ -1,1 +1,47 @@
+/**************** MISURE-GENRALI ****************/ 
+.w-20{
+    width: 20%;
+}
 
+.wi-100{
+    width: 100%;
+}
+
+.wi-25{
+    width: 100px;
+}
+
+/**************** LOADER ****************/ 
+
+
+#loader{
+
+    position: fixed;
+    top:0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(97, 97, 97, 0.792);
+
+    width:  100%;
+    height: 100%;
+
+}
+
+.fz{
+
+    font-size: 80px;
+    height: 150px;
+    width:  150px;
+}
+
+.dn{
+    display: none;
+}
+
+.db{
+    display: block;
+}
