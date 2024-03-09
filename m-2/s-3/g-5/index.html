@@ -19,7 +19,7 @@
           <div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a id='add' class="nav-link active btn btn-success w-100 text-light " type="button" href="add.html" aria-current="page">add</a>
+                <a id='add' class="nav-link active btn btn-success w-100 text-light " type="button" href="" aria-current="page">add</a>
               </li>
             </ul>
           </div>
@@ -40,11 +40,41 @@
         </div>
       </div>
 
-      <div id="loader" >
-        <div class="spinner-border text-warning fz  " role="status">
+      <div id="loader" class="banner" >
+        <div class="spinner-border text-warning fz " role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
+
+      <div id="formAcc" class="d-none">
+
+        <div id="prova">
+
+          <form class="border border-3 border-warning p-3">
+
+            <p class="fs-2 text-warning text-center fw-bold"> Acceso Gestore</p>
+            <div class="mb-3">
+              
+              <input type="text" class="form-control" id="nomeFormAcc" aria-describedby="emailHelp" placeholder="Nome utente">
+             
+            </div>
+  
+            <div class="mb-3">
+              
+              <input type="password" class="form-control" id="pwFormAcc" placeholder="Password">
+            </div>
+  
+            <div class="mb-3">
+              <button id="btnFormAcc" type="submit" class="btn btn-warning w-100">Submit</button>
+            </div>
+            
+          </form>
+        </div>
+
+        
+      </div>
+
+
 
 
       <template id="template"> 
@@ -58,10 +88,10 @@
               <p id="prezzo" class="card-text fs-5 text-secondary"></p>
               <div class="row">
                 <div class="col-12  col-xl-6  mt-2">
-                  <button href="#" id="modifica" class="btn btn-warning  wi-100 ">Modifica</button>
+                  <a href="#" id="modifica" class="btn btn-warning  wi-100 ">Modifica</a>
                 </div>
                 <div class="col-12  col-xl-6 mt-2 ">
-                  <button href="#" id="scopri" class="btn btn-primary wi-100 ">Scopri di piu</button>
+                  <a href="#" id="scopri" class="btn btn-primary wi-100 ">Scopri di piu</a>
                 </div>
                 <div class=" col-12 mt-2 ">
                   <button id="elimina" type="button" class="btn btn-danger wi-100">Elimina</button>

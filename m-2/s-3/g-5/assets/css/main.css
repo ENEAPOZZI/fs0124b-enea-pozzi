@@ -13,8 +13,8 @@
 
 /**************** LOADER ****************/ 
 
-
-#loader{
+/******* Classe-Generale-anner *******/ 
+#loader,#prova{
 
     position: fixed;
     top:0;
@@ -31,6 +31,7 @@
 
 }
 
+
 .fz{
 
     font-size: 80px;
@@ -44,4 +45,17 @@
 
 .db{
     display: block;
+}
+
+
+/**************** FORM ****************/ 
+.formAcc {
+
+    border-radius: 50px;
+
+}
+
+
+#nomeFormAcc,#pwFormAcc{
+    border-radius: 50px;
 }

@@ -105,3 +105,39 @@
 
     return clone;
 }
+
+
+let addBtn = document.getElementById('add')
+let formAcc = document.getElementById('formAcc')
+
+let nomeFormAcc = document.getElementById('nomeFormAcc') 
+let pwFormAcc = document.getElementById('pwFormAcc') 
+
+let btnFormAcc =  document.getElementById('btnFormAcc') 
+
+
+addBtn.addEventListener('click', function(e){
+    e.preventDefault();
+
+    formAcc.classList.remove('d-none')
+    formAcc.classList.add('d-block')
+
+
+    btnFormAcc.addEventListener('click',function(e){
+        e.preventDefault();
+        if(nomeFormAcc.value === 'nome' && pwFormAcc.value === '123' ){
+              
+            location.href = './add.html'
+
+        }else{
+            alert('nome utente o pas sbagliata ')
+        }
+
+
+    })
+
+
+
+
+    
+})
