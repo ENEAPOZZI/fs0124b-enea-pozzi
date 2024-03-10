@@ -48,6 +48,7 @@
         let scopriBtn = card.querySelector('#scopri')
         let eliminaBtn = card.querySelector('#elimina')
         
+        
         /*************** ASSEGNAZIONE-VALORI-ELEMENTI-CARD ***************/     
         
         img.src = telefono.imageUrl
@@ -61,6 +62,9 @@
         modificaBtn.href = `edit.html?id=${telefono._id}`
 
         scopriBtn.href = `dettagli.html?id=${telefono._id}`
+
+        
+    
 
         
         /*************** ELEMENTI-CARD/BOTTONE-ELIMINA + CHIAMATA/CONFERMA ***************/   
@@ -89,6 +93,9 @@
 
         document.querySelector('#prodotti').append(card)
 
+
+      
+
     }
 
    // }, 3000) questo è il set timeout per vedere il loader
@@ -105,6 +112,7 @@
 
     return clone;
 }
+
 
 
 
@@ -151,3 +159,5 @@ addBtn.addEventListener('click', function(e){
     })
 
 })
+
+
