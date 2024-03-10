@@ -50,12 +50,26 @@
 
 /**************** FORM ****************/ 
 .formAcc {
-
     border-radius: 50px;
-
 }
 
 
 #nomeFormAcc,#pwFormAcc{
     border-radius: 50px;
 }
+
+#exit{
+
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exit span {
+    transform: translateY(-2px);
+}
+ 

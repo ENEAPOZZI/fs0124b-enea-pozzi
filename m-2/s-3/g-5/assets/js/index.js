@@ -1,8 +1,11 @@
 
- 
+ /********************** CREDENZIALI **********************/
+     //per accedere alla pagina add servono le credenziali
+    //nome: nome
+   // pw : 123
+ /********************** CREDENZIALI **********************/
 
 
- 
  /*************** RICHIESTA-ELEMENTI ***************/
 
  
@@ -92,11 +95,8 @@
     
     
 })
+
     /*************** FUNZIONE-CLONE-TEMPLATE ***************/
-
- 
- 
-
 
  function generaClone(){
     
@@ -107,8 +107,13 @@
 }
 
 
+
+/*************** FORM-AUTENTICAZIONE ***************/
+
 let addBtn = document.getElementById('add')
 let formAcc = document.getElementById('formAcc')
+
+let exitBtn = document.getElementById('exit')
 
 let nomeFormAcc = document.getElementById('nomeFormAcc') 
 let pwFormAcc = document.getElementById('pwFormAcc') 
@@ -136,8 +141,13 @@ addBtn.addEventListener('click', function(e){
 
     })
 
+    exitBtn.addEventListener('click',function(e){
+        e.preventDefault();
+       
+        formAcc.classList.remove('d-block')
+        formAcc.classList.add('d-none')
 
 
+    })
 
-    
 })

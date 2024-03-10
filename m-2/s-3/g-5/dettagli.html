@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/main.css">
   </head>
   <body>
+
+    <!-------------------- NAV BAT   -------------------->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid d-flex justify-content-between">
           
@@ -27,7 +29,7 @@
     </nav>
 
      
-
+<!-------------------- SPAZIONE CREAZIONE CARTA   -------------------->
 
       <div class="container">
 
@@ -36,29 +38,68 @@
        
         <div id='dettagli'>
 
-            <div class="item">       
+            <div class="item">  
+
                 <div class="row">
+
                     <div class="col-4">
                         <img id='img' class="img-fluid" src="">
                     </div>
+
                     <div class="col-8 ">
+
                         <p id="nome" class='fs-1 text-warning'></p>
+
                         <p id="modello" class='fs-3 mt-1 '></p>
+
                         <p id="descrizione" class='fs-5 text-secondary mt-2'></p>
+
                         <div class="prezzo">
                             <p id="prezzo" class="fs-5 bg-dark text-center text-warning w-20 rounded-pill"></p>
                         </div>
+
                     </div>
+
                 </div>
 
             </div>
-            
 
         </div>
-    
-    
+
       </div>
 
+ <!-------------------- FORM VALIDAZIONE  -------------------->
+      <div id="formAcc" class="d-none ">
+
+        <div id="prova" >
+
+          <form class="border border-3 border-warning p-3 position-relative">
+
+            <span id='exit'  class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light " >
+              <span>x</span>
+            </span>
+
+            <p class="fs-2 text-warning text-center fw-bold"> Acceso Gestore</p>
+            <div class="mb-3">
+              
+              <input type="text" class="form-control" id="nomeFormAcc" aria-describedby="emailHelp" placeholder="Nome utente">
+             
+            </div>
+  
+            <div class="mb-3">
+              
+              <input type="password" class="form-control" id="pwFormAcc" placeholder="Password">
+            </div>
+  
+            <div class="mb-3">
+              <button id="btnFormAcc" type="submit" class="btn btn-warning w-100">Submit</button>
+            </div>
+            
+          </form>
+
+        </div>
+
+      </div>
      
            
        
