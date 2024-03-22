@@ -1,0 +1,15 @@
+.logo-marchio{
+
+  img{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+}
