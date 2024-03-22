@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  collasato: boolean = true;
+
+  fallocollasato() {
+    this.collasato = !this.collasato;
+  }
 }
