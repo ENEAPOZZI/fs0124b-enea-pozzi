@@ -14,7 +14,7 @@ export class HomepageComponent {
 
 
 
-  hey=this.todosSvc.getuseridbytodo()
+
 
 
 

@@ -923,10 +923,8 @@ export class TodosService {
       return this.todo.filter(todo => !todo.completed)
     }
 
-    getuseridbytodo(){
-       let b= this.todo.filter(todo => todo.userId)
-
-       console.log(b)
+    getuseridbytodo():Todo[]{
+      return this.todo.filter(todo => todo.userId)
     }
 
 }
