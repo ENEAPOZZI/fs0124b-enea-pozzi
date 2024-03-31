@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Todo } from '../interfacce/todo';
+import { UsersService } from './users.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TodosService {
+
+  constructor(private userSvc:UsersService){}
 
   todo:Todo[] = [
 
@@ -911,9 +914,7 @@ export class TodosService {
     ]
 
 
-    getalltodo(): Todo[]{
-      return this.todo
-    }
+
 
     getcompletitodo():Todo[]{
       return this.todo.filter(todo => todo.completed)
@@ -923,8 +924,30 @@ export class TodosService {
       return this.todo.filter(todo => !todo.completed)
     }
 
+
+
     getuseridbytodo():Todo[]{
       return this.todo.filter(todo => todo.userId)
     }
 
-}
+
+
+
+   nuovoArrMisto = this.todo.map((todo) => {
+     let user = this.userSvc.user.find(user => user.id === todo.userId);
+     return { todo,user };
+   });
+
+
+   getcompletiArrMisto(){
+    return this.nuovoArrMisto.filter(incarichi => incarichi.todo.completed )
+  }
+
+
+  getnocompletiArrMisto(){
+    return this.nuovoArrMisto.filter(incarichi => !incarichi.todo.completed )
+  }
+
+
+
+ }

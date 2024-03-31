@@ -8,6 +8,7 @@ import { CompletatiComponent } from './pages/completati/completati.component';
 import { DacompletareComponent } from './pages/dacompletare/dacompletare.component';
 import { UserComponent } from './pages/user/user.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

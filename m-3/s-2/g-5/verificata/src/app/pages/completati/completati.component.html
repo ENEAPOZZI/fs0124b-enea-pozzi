@@ -1,1 +1,17 @@
-<p>completati works!</p>
+
+<div *ngFor="let i of nuovoArr" class="text-white mt-3 p-3" [ngClass]="{
+
+  'bg-success':i.todo.completed,
+  'bg-danger':!i.todo.completed,
+}">
+
+  <p>Task for: {{i.user?.firstName}} {{i.user?.lastName}}</p>
+
+  <p>Todo: {{i.todo.todo}}</p>
+
+
+  <input type="checkbox" class="form-check-input ms-2" id="exampleCheck1"  [checked]="i.todo.completed" [(ngModel)]="i.todo.completed ">
+
+
+
+</div>

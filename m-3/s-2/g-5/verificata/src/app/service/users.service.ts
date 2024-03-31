@@ -809,6 +809,7 @@ export class UsersService {
     }
 
   ]
+  verified_user: any;
 
   getalluser():Users[]{
     return this.user
