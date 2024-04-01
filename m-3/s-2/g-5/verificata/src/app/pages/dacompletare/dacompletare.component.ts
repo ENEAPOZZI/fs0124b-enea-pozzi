@@ -1,3 +1,4 @@
+import { TodosService } from './../../service/todos.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './dacompletare.component.scss'
 })
 export class DacompletareComponent {
+
+
+  constructor(private todosSvc:TodosService){}
+
+
+  nuovoArr = this.todosSvc.getnocompletiArrMisto()
+
+
+
 
 }

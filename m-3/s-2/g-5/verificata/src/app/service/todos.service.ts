@@ -914,30 +914,16 @@ export class TodosService {
     ]
 
 
-
-
-    getcompletitodo():Todo[]{
-      return this.todo.filter(todo => todo.completed)
-    }
-
-    getnocompletitodo():Todo[]{
-      return this.todo.filter(todo => !todo.completed)
-    }
-
-
-
-    getuseridbytodo():Todo[]{
-      return this.todo.filter(todo => todo.userId)
-    }
-
-
-
-
    nuovoArrMisto = this.todo.map((todo) => {
      let user = this.userSvc.user.find(user => user.id === todo.userId);
+
      return { todo,user };
    });
 
+
+   getAllArrMisto(){
+    return this.nuovoArrMisto
+  }
 
    getcompletiArrMisto(){
     return this.nuovoArrMisto.filter(incarichi => incarichi.todo.completed )

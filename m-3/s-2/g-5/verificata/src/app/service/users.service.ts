@@ -809,15 +809,13 @@ export class UsersService {
     }
 
   ]
-  verified_user: any;
+
 
   getalluser():Users[]{
     return this.user
   }
 
-  getidbyuser():Users[]{
-    return this.user.filter(user => user.id)
-  }
+
 
 
 
