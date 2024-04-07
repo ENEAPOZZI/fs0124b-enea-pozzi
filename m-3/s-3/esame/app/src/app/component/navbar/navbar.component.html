@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <div class="container-fluid">
+
+    <button type="button"
+		class="btn btn-outline-primary"
+		(click)="collapse.toggle()"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/register">registrati</a>
+        </li>
+
+        <li class="nav-item dropdown"  *ngIf="isUserLoggedIn" >
+
+          <div ngbDropdown class="d-inline-block">
+
+            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+              altro
+            </button>
+
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="text-center">
+
+              <div>
+                <a routerLink="/film">fim</a>
+              </div>
+
+              <div>
+                <a routerLink="/utenti">utenti</a>
+              </div>
+
+
+
+              <div>
+                <a (click)="navigateToDash(5)">dashboard profilo </a>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <button (click)="logout()" *ngIf="isUserLoggedIn" class="btn btn-danger">Esci</button>
+
+    </div>
+  </div>
+</nav>
+
