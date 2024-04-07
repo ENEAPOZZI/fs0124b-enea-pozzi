@@ -29,7 +29,6 @@ export class ServicesService {
 
  user$ = this.authSubject.asObservable()
 
-// funziona solo se si accede all'utente tramite login
  isLoggedIn$ = this.user$.pipe(
    map(user => !!user),
    tap(user =>  {
@@ -37,6 +36,7 @@ export class ServicesService {
      this.syncIsLoggedIn = user;
    })
    )
+  currentUser: any;
 
     constructor(
       private http:HttpClient,
