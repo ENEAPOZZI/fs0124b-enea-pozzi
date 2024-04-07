@@ -11,7 +11,7 @@ import { Users } from '../models/users';
 export class DashComponent {
 
 
-  constructor(private serSvc:ServicesService,    private route: ActivatedRoute,){}
+  constructor(private serSvc:ServicesService){}
 
   user:Users = {
     name: '',
@@ -20,20 +20,23 @@ export class DashComponent {
     password: '',
     id:0
   }
-  ngOnInit(): void {
-    this.route.params.subscribe((params: any) => {
-      const id = params.id;
-      if (id) {
-        this.serSvc.getusersById(id).subscribe(
-          (user: Users) => {
-            this.user = user;
-            console.log(user.name);
-          },
 
+  ngOnInit(){
+    this.serSvc.user$.subscribe((user => {
+      if (user) {
+
+        this.user.id = user.id;
+        console.log(user.id)
+
+        this.serSvc.getusersById(user.id).subscribe(
+          (userData: Users) => {
+            this.user = userData;
+            console.log(userData.name);
+          }
         );
       }
-    });
+    }))
+  }
 
-}
 
 }
