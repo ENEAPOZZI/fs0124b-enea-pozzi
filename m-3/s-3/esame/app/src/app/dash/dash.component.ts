@@ -27,7 +27,7 @@ export class DashComponent {
         this.user.id = user.id;
         console.log(user.id)
 
-        this.serSvc.getusersById(user.id).subscribe(
+          this.serSvc.getusersById(user.id).subscribe(
           (userData: Users) => {
             this.user = userData;
             console.log(userData.name);
