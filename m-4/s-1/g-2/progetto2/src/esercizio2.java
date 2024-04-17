@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class esercizio2 {
+public class esercizio2 {
 }
