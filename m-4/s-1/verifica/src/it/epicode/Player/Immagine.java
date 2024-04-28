@@ -53,5 +53,5 @@ public class Immagine extends Media implements MetodiVisibili{
 
 
 /*
-    classe finale per le classi 
+    classe finale per le classi
  */
