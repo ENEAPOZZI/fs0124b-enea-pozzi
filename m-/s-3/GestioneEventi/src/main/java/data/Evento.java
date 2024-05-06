@@ -5,13 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
-import java.util.StringJoiner;
-
 @Entity
 @Table(name = "evento")
 
-public class Crea {
+public class Evento {
 
 
 
@@ -29,14 +26,14 @@ public class Crea {
     @Column(length = 15, name = "tipo")
     private String tipo;
 
-    @Column(name = "nmax", columnDefinition = "numeric(2,0) check (age <= 30)", nullable = false)
+    @Column(length = 15, name = "numero")
     private Integer nmax;
 
 
-    public Crea() {
+    public Evento() {
     }
 
-    public Crea(String data, String descrizione, long id, Integer nmax, String tipo, String titolo) {
+    public Evento(String data, String descrizione, long id, Integer nmax, String tipo, String titolo) {
         this.data = data;
         this.descrizione = descrizione;
         this.id = id;
