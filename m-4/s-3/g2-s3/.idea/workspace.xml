@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04de3481-4ba1-4e3a-8967-a73cb052b96f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Evento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/TipoEvento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/src/main/java/data/Evento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/src/main/java/data/EventoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/GestioneEventi/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/g-3/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/java/it/epicode/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/java/it/epicode/dao/BiblioDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/java/it/epicode/entities/Elemento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/java/it/epicode/entities/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/java/it/epicode/entities/Prestito.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/java/it/epicode/entities/Rivista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/java/it/epicode/entities/Utente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../m-/s-3/verifica/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s-2/provaaa/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ENEAPOZZI"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ENEAPOZZI/fs0124b-enea-pozzi.git",
+    "accountId": "b7c1291c-1388-4678-8a27-4e22e4fc567d"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2g8CpBBbSZxNHBSNmXdjMPRvrD3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04de3481-4ba1-4e3a-8967-a73cb052b96f" name="Changes" comment="" />
+      <created>1715069997406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715069997406</updated>
+    </task>
+    <servers />
+  </component>
+</project>
