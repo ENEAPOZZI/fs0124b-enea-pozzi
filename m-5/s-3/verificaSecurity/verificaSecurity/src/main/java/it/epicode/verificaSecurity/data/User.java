@@ -1,6 +1,6 @@
 package it.epicode.verificaSecurity.data;
 
-
+//commento 
 import jakarta.persistence.*;
 import lombok.*;
 
